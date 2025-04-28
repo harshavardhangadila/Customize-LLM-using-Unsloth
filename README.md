@@ -9,3 +9,6 @@
 | **E – Continued Fine-Tuning Chain** | - Stage 1: General Knowledge Chatbot.<br/>- Stage 2: Billing Support Fine-tuning.<br/>- Stage 3: Customer Service Support. | Synthetic Q&A sets<br/>(20 samples per domain) | TinyLlama LoRA<br/>100 steps per stage<br/>Chained checkpoints | - Three sequential checkpoints showing increasing specialization in domain understanding. |
 | **F – Mental Health Chatbot** | - Created 500 mental health instruction-response samples.<br/>- Fine-tuned TinyLlama for mental wellness dialogue.<br/>- Tested on new unseen mental health queries. | 500 synthetic mental health Q&A pairs | TinyLlama LoRA<br/>100 steps fine-tuning | - Fine-tuned Mental Health Chatbot.<br/>- Model responding empathetically to stress, anxiety, loneliness prompts. |
 | **G – Export to Ollama** | - Merged LoRA adapters.<br/>- Saved Huggingface full model.<br/>- Exported to GGUF (q4_k_m).<br/>- Created Modelfile.<br/>- Verified inference. | TinyLlama checkpoint from Task F | TinyLlama full model (merged)<br/>GGUF export<br/>Quantized q4_k_m | - `tinyllama_mentalhealth_gguf/` folder:<br/>• model.gguf<br/>• tokenizer.json<br/>• Modelfile<br/>- Ready for Ollama import and local running. |
+
+
+Youtube: [Customize-LLM-using-Unsloth](https://www.youtube.com/playlist?list=PLCGwaUpxPWO2KKyJX_Ic9eQu7ZRu1b1JG)
